@@ -5,3 +5,4 @@ require('lsp')		-- lua/lsp.lua
 require('colors')	-- lua/colors.lua
 require('telescope')    -- lua/telescope.lua
 require('treesitter')    -- lua/treesitter.lua
+require('nvimtree')    -- lua/nvimtree.lua
