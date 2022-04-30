@@ -35,5 +35,14 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-nvim_tree.setup() 
+nvim_tree.setup {
+	filters = {
+		dotfiles = true
+	},
+	git = {
+		enable = true,
+		ignore = false
+	}
+
+} 
 

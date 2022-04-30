@@ -1,8 +1,10 @@
-require('settings')	-- lua/settings.lua
-require('keymaps')	-- lua/keymaps.lua
-require('plugins')	-- lua/plugins.lua
-require('lsp')		-- lua/lsp.lua
-require('colors')	-- lua/colors.lua
-require('telescope')    -- lua/telescope.lua
-require('treesitter')    -- lua/treesitter.lua
-require('nvimtree')    -- lua/nvimtree.lua
+require('user.settings')
+require('user.keymaps')
+require('user.plugins')
+require('user.lsp')	
+require('user.colors')
+require('user.telescope')
+require('user.treesitter')
+require('user.nvimtree')
+require('user.cmp') 
+

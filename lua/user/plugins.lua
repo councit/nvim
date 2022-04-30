@@ -40,12 +40,24 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "ellisonleao/gruvbox.nvim" -- gruvbox color scheme
   use "folke/tokyonight.nvim" -- tokyonight color scheme
+    -- cmp plugins
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+
+  -- snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   -- lsp
   use 'neovim/nvim-lspconfig' -- Collection of configurations
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   -- telescope
   use {
   'nvim-telescope/telescope.nvim',

@@ -22,8 +22,10 @@ o.undofile = true
 o.writebackup = false
 o.signcolumn = "yes"
 o.scrolloff = 8
-o.shiftwidth = 2
-o.tabstop = 2
+o.shiftwidth = 4
+o.tabstop = 4
+o.softtabstop = 4
+o.expandtab = true
 -- window options
 wo.number = true
 -- buffer options
